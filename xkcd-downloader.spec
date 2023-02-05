@@ -8,7 +8,7 @@ a = Analysis(
     ['src\\main.py'],
     pathex=[],
     binaries=[],
-    datas=[('data', 'data/')],
+    datas=[('D:\\Mio\\Proyectos\\Python\\xkcd-downloader\\data', 'data/')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
