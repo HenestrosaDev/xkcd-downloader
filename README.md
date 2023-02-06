@@ -28,22 +28,23 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#project-structure">Project Structure</a></li>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
+   <summary>Table of Contents</summary>
+   <ol>
+      <li>
+         <a href="#about-the-project">About The Project</a>
+         <ul>
+            <li><a href="#intended-usage">Intended Usage</a></li>
+            <li><a href="#project-structure">Project Structure</a></li>
+            <li><a href="#built-with">Built With</a></li>
+         </ul>
+      </li>
+      <li>
+         <a href="#getting-started">Getting Started</a>
+      </li>
+      <li><a href="#contributing">Contributing</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#acknowledgments">Acknowledgments</a></li>
+   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
@@ -53,21 +54,54 @@
 In the first execution, the script asks the user to select a folder to store the xkcds vignettes (in a folder called `xkcd-vignettes`) and explanations (`xkcd-explanations`).
 Once that's done, the script will start to download all existing xkcds. On successive runs of the script, it will check if there are any new xkcds available for download.
 
+<!-- INTENDED USAGE -->
+
+### Intended usage
+
+Even though the program works fine as it is, it would be much better if we scheduled it to run on Mondays, Wednesdays and Fridays, the days when new xkcds are released.
+
+There are two ways to do this, depending on the OS that you use:
+
+For **macOS** and **Linux** users:
+1. Open a terminal window and run the following command to open a crontab file:
+    ```
+    crontab -e
+    ```
+2. Add a new line to the file with the following code:
+    ```
+    0 19 * * 1,3,5 /usr/bin/python3 /path/to/xkcd-downloader.exe
+    ```
+   Notice that the hour is set to 19:00, which I think is a reasonable hour to get the xkcd as it will be already released.
+
+
+3. Save and close the crontab file. The program will now run at the specified time using cron.
+
+For **Windows** users:
+
+1. Open the Task Scheduler by pressing the Windows key and typing "Task Scheduler".
+2. Click on the "Create Basic Task" option.
+3. Give the task a name and description, then click "Next".
+4. Select a trigger for the task. In this case, "Weekly".
+5. Choose the days "Monday", "Wednesday" and "Friday".
+6. Select the "Start a program" action, then click "Next".
+7. In the "Program/script" field, enter the path to the executable, e.g. `C:\Python\Python38\python.exe`.
+8. In the "Add arguments" field, enter the path to your script file, e.g. `C:\xkcd-downloader.exe`.
+9. Click "Next" and then "Finish".<br>  
+   The program should now run at the specified time using the Task Scheduler.
+
 <!-- PROJECT STRUCTURE -->
 
 ### Project Structure
 
 Directories:
- 
+
 - `data`: Contains the `xkcd-path.txt`, which stores the path where the xkcds are being stored.
 - `src`:  Contains the source code files.
 
 Besides those directories, there are also these two files in the root (apart from the .gitignore, README.md and LICENSE):
 
-- `xkcd-downloader.spec`: Used to generate a .exe file with [PyInstaller](https://pyinstaller.org/en/stable/).  
+- `xkcd-downloader.spec`: Used to generate a .exe file with [PyInstaller](https://pyinstaller.org/en/stable/).
 - `requirements.txt`: Lists the names and versions of each package used to build this project.
- 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- BUILT WITH -->
 
@@ -83,7 +117,7 @@ Besides those directories, there are also these two files in the root (apart fro
 ## Getting Started
 
 If you want to execute the program:
-- Go to [releases](https://github.com/HenestrosaConH/xkcd-downloader/releases) and download the latest one. Once you download it open `xkcd-downloader.exe`. 
+- Go to [releases](https://github.com/HenestrosaConH/xkcd-downloader/releases) and download the latest one. Once you download it open `xkcd-downloader.exe`.
 
 If you want to open the code:
 - Clone the project with the `git clone https://github.com/HenestrosaConH/xkcd-downloader.git` command and then open it with your favourite IDE (mine is [PyCharm](https://www.jetbrains.com/pycharm/)).
@@ -92,7 +126,7 @@ If you want to open the code:
 
 <!-- CONTRIBUTING -->
 
-## Contributing  
+## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -111,7 +145,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-<a href="https://www.linkedin.com/in/henestrosaconh/" target="blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a> 
+<a href="https://www.linkedin.com/in/henestrosaconh/" target="blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="mailto:henestrosaconh@gmail.com" target="_blank"><img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
