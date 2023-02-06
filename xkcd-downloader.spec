@@ -5,10 +5,10 @@ block_cipher = None
 
 
 a = Analysis(
-    ['src\\main.py'],
+    ['src/main.py'],
     pathex=[],
     binaries=[],
-    datas=[('D:\\Mio\\Proyectos\\Python\\xkcd-downloader\\data', 'data/')],
+    datas=[('data', 'data/')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
