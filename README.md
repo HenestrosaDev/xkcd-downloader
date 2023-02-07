@@ -65,7 +65,7 @@ Directories:
 Besides those directories, there are also these two files in the root (apart from the .gitignore, README.md and LICENSE):
 
 - `xkcd-downloader.spec`: Used to generate a .exe file with [PyInstaller](https://pyinstaller.org/en/stable/).
-- `requirements.txt`: Lists the names and versions of each package used to build this project.
+- `requirements.txt`: Lists the names and versions of each package used to build this project. To install the requirements, execute `pip install -r requirements.txt`.
 
 <!-- BUILT WITH -->
 
