@@ -88,9 +88,9 @@ If you want to open the code:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- INTENDED USAGE -->
+<!-- USAGE -->
 
-## Intended usage
+## Usage
 
 Although the program works well as it stands, it would be much more useful if it were scheduled it to run on Mondays, Wednesdays and Fridays, the days when new xkcds are published.
 
