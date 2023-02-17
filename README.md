@@ -23,7 +23,7 @@
   <p align="center">
     A Python script that downloads xkcd vignettes along with their explanation
     <br />
-    <a href="https://github.com/HenestrosaConH/xkcd-downloader/issues">Report Bug</a> · <a href="https://github.com/HenestrosaConH/xkcd-downloader/issues">Request Feature</a>
+    <a href="https://github.com/HenestrosaConH/xkcd-downloader/issues">Report Bug</a> · <a href="https://github.com/HenestrosaConH/xkcd-downloader/issues">Request Feature</a> · <a href="https://github.com/HenestrosaConH/xkcd-downloader/discussions">Ask Question</a>
   </p>
 </div>
 
