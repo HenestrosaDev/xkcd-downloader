@@ -183,5 +183,5 @@ I've made use of the following resources to make this project:
 [issues-shield]: https://img.shields.io/github/issues/HenestrosaConH/xkcd-downloader.svg?style=for-the-badge
 [issues-url]: https://github.com/HenestrosaConH/xkcd-downloader/issues
 [license-shield]: https://img.shields.io/github/license/HenestrosaConH/xkcd-downloader.svg?style=for-the-badge
-[license-url]: https://github.com/HenestrosaConH/xkcd-downloader/blob/master/LICENSE.txt
+[license-url]: https://github.com/HenestrosaConH/xkcd-downloader/blob/main/LICENSE
 [linkedin-url]: https://linkedin.com/in/henestrosaconh
